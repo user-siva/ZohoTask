@@ -1,13 +1,16 @@
 package Task2;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
-        P4 p = new P4();
-        p.p4();
-        // int[] res = p.Solution(new int[] { 13, 2, 4, 15, 12, 10, 5 });
-        // for (int i = 0; i < res.length; i++) {
-        // System.out.print(res[i]);
-        // System.out.print(",");
-        // }
+        P19 p = new P19();
+        List<List<Integer>> list = new ArrayList<>();
+        list.add(new ArrayList<>(Arrays.asList(1, 2, 3)));
+        list.add(new ArrayList<>(Arrays.asList(4, 5, 6)));
+        list.add(new ArrayList<>(Arrays.asList(7, 8, 9)));
+        p.solution(list);
     }
 }
